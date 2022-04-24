@@ -18,7 +18,8 @@ import {
 } from "react-mdl";
 
 import "./App.css";
-import "react-mdl/extra/css/material.light_blue-pink.min.css";
+import "react-mdl/extra/css/material.blue_grey-light_blue.min.css";
+// import "react-mdl/extra/css/material.light_blue-pink.min.css";
 import "react-mdl/extra/material.js";
 
 import * as sequencer from "./sequencer";
@@ -310,14 +311,14 @@ class App extends Component {
     const {updateBPM, start, stop, addTrack, share, randomSong, closeDialog} = this;
     return (
       <div className="app">
-        <h3>Whale Beats</h3>
+        <h3>Space Beats</h3>
         {shareHash ?
           <ShareDialog hash={shareHash} closeDialog={closeDialog} /> : null}
         <table>
           <tr>
             <td colSpan="19">
               <p style={{textAlign: "right"}}>
-                <Button type="button" colored onClick={randomSong}>I am uninspired, get me some random tracks</Button>
+                <Button type="button" colored onClick={randomSong}>randomize it</Button>
               </p>
             </td>
           </tr>
